@@ -14,9 +14,8 @@ var app = new Vue ({
             inputValue.value = "";
             console.log(this.noteList);
         },
-        delete: function (){
+        deleteFunction: function (){
             let liElement = document.getElementById('li-element');
-
             liElement.remove();
         }
     }
