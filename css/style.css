@@ -3,4 +3,33 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato";
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+#app img {
+  height: 120px;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: salmon;
+}
+
+button {
+  border-radius: 10px;
+  padding: 15px;
+  vertical-align: 0.1em;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: rgb(199, 154, 154);
+  font-weight: bold;
+  color: white;
 }
