@@ -8,9 +8,14 @@ var app = new Vue ({
 
     methods: {
         pushList: function (){
-            this.noteList.push(this.note);
-            this.note = "";
-            console.log(this.noteList);
+            let noteSelector = document.getElementById('note-value');
+            if (noteSelector.value !=='') {
+                this.noteList.push(this.note);
+                this.note = "";
+                console.log(this.noteList);
+            } else {
+                alert('Scrivi una nota nell\'input');
+            }
         },
         deleteFunction: function (){
             let liElement = document.getElementById('li-element');

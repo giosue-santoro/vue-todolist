@@ -16,7 +16,7 @@
         <img src="img/logo.png" alt="logo">
 
         <div>
-            <input id="reset" v-model="note" v-on:keyup.enter="pushList" placeholder="Scrivi una nota">
+            <input id="note-value" v-model="note" v-on:keyup.enter="pushList" placeholder="Scrivi una nota">
             <button @click="pushList">Aggiungi</button>
         </div>
 
