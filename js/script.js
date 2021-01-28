@@ -3,18 +3,21 @@ var app = new Vue ({
     
     data: {
         note: '',
-        noteList: [],
+        noteList: []
     },
 
     methods: {
         pushList: function (){
-            
             let inputValue = document.getElementById('reset');
 
             this.noteList.push(this.note);
             inputValue.value = "";
             console.log(this.noteList);
+        },
+        delete: function (){
+            let liElement = document.getElementById('li-element');
 
+            liElement.remove();
         }
     }
 })

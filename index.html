@@ -13,17 +13,19 @@
 
     <div id="app">
         
-      <img src="img/logo.png" alt="logo">
+        <img src="img/logo.png" alt="logo">
+
         <div>
-            <input id="reset" v-model="note" v-on:keyup.enter="noteList">
+            <input id="reset" v-model="note" v-on:keyup.enter="pushList" placeholder="Scrivi una nota">
             <button @click="pushList">Aggiungi</button>
         </div>
 
-        <div class="box">
+        <div class="box-list">
             <ul>
-                <li></li>
+                <li v-for="el in noteList">{{el}}<i class="fa fa-times" id="li-element" @click="delete" aria-hidden="true"></i></li>
             </ul>
         </div>
+
     </div>
 
     <script src="js/script.js"></script>
