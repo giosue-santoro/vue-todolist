@@ -8,10 +8,8 @@ var app = new Vue ({
 
     methods: {
         pushList: function (){
-            let inputValue = document.getElementById('reset');
-
             this.noteList.push(this.note);
-            inputValue.value = "";
+            this.note = "";
             console.log(this.noteList);
         },
         deleteFunction: function (){
